@@ -22,9 +22,9 @@ Image pairs are now available on google drive. [link to download](https://drive.
 2. Reproducible code in PyTorch.
 
 ## Contact
-haotan@cs.unc.edu
+Hao Tan: haotan@cs.unc.edu
 
-franck.dernoncourt@gmail.com 
+Franck Dernoncourt: dernonco@adobe.com 
 
 ## Thanks
 We specially thank [Nham Le](https://www.linkedin.com/in/nhamle/) in collecting the dataset!
