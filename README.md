@@ -17,9 +17,9 @@ uid: Universal id for each instruction. It is useful when multiple datasets are 
 
 Image pairs are now available on google drive. [link to download](https://drive.google.com/drive/folders/1p_hkPwRUiLl1RHV3DkzQk3ti-GzHzT7O?usp=sharing).
 
-## TODO's
-1. Script to convert/unify NLVR2 and Spot-the-Diff datasets.
-2. Reproducible code in PyTorch.
+
+## Code
+The code are now available to preview but I am sorry that it is not at the stage of `press Enter and run` as all my other projects. Please read [README_CODE](README_CODE.md) for more details.
 
 ## Contact
 Hao Tan: haotan@cs.unc.edu
