@@ -19,7 +19,7 @@ Image pairs are now available on google drive. [link to download](https://drive.
 
 
 ## Code
-The code are now available to preview but I am sorry that it is not at the stage of `press Enter and run` as all my other projects. Please read [README_CODE](README_CODE.md) for more details.
+Please read [README_CODE](README_CODE.md) for more details.
 
 ## Contact
 Hao Tan: haotan@cs.unc.edu
