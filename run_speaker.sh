@@ -4,6 +4,7 @@
 dataset=adobe
 
 # Main metric to use
+# One of 'BLEU', 'METEOR', 'ROUGE_L', 'CIDEr', 'Bleu_1'~'Bleu_4', 'F1' (F1 is the f1 score of BLEU and ROUGE_L)
 metric=CIDEr
 
 # model from 'init', 'newheads', 'newcross', 'dynamic', which are the four model in paper 
