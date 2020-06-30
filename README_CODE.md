@@ -48,4 +48,14 @@ Four model options are provided, which are corresponding to the four methods in 
 > Remind: If the model is `dynamic`, some of our GPUs have unknown precision issue: the results would dramatically decrease after a few epochs training. We are not sure about the reason but we found that our titan V cards do not suffer from this issue.
 
 
+## Sequence-Level Training (Optional)
+This code also provides the full utilization to train the model with reinforcement learning (RL), as shown in the paper [Sequence Level Training with Recurrent Neural Networks](https://arxiv.org/abs/1511.06732). It could be triggered by setting
+```
+--train rlspeaker
+```
+By setting this, the model would try to use the main metric (set by `--metric`) as reward and directly optimize it.
+We also implement the `self-critical methods` shown in [Self-critical Sequence Training for Image Captioning](https://arxiv.org/abs/1612.00563), which could be activated by setting `--baseline self` in the running script.
 
+The RL training could dramstically boost the metric that it optimized but show a lower performance in human evaluation. We thus discard RL training in the paper (as discussed in Sec.5 Related Work) but it is definitely free to use!
+
+Enjoy it~
