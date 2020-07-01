@@ -169,6 +169,8 @@ class Speaker:
             max_insts = self.infer_batch(
                 src, trg, sampling=False, train=False
             )
+            self.encoder.train()
+            self.decoder.train()
             max_sents = [self.tok.decode(self.tok.shrink(inst)) for inst in max_insts]
             uidXsents = list(zip(uid, max_sents))
             max_reward = reward_func(uidXsents)
