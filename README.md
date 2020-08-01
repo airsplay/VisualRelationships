@@ -19,9 +19,9 @@ Image pairs are now available on google drive. [link to download](https://drive.
 
 
 ## Existing Public Datasets
-Besides our collected datasets, we also use two public existing datasets:
-- [nlvr2](https://arxiv.org/pdf/1811.00491.pdf): Cornell real image NLVR dataset. <https://github.com/clic-lab/nlvr/tree/master/nlvr2>
-- [spotdiff](https://arxiv.org/pdf/1808.10584.pdf): the CMU spot-diff dataset. [paper] <https://github.com/harsh19/spot-the-diff>
+Besides our collected image-editing corpus, we also evalutae our methods on two public datasets in the paper:
+- [nlvr2](https://arxiv.org/pdf/1811.00491.pdf): Cornell real image NLVR dataset; Github link: <https://github.com/clic-lab/nlvr/tree/master/nlvr2>
+- [spotdiff](https://arxiv.org/pdf/1808.10584.pdf): the CMU spot-diff dataset; Github link: <https://github.com/harsh19/spot-the-diff>
 
 Data are saved in the `dataset` folder and each subfolder is related to one dataset.
 Each dataset contains `train.json`, `valid.json`, and `test.json` in the same format.
@@ -37,6 +37,9 @@ Datum = {
 }, ...]
 ```
 
+**More Related Datasets** 
+1. The dataset [NEURAL NATURALIST](https://arxiv.org/abs/1909.04101) (published in EMNLP 2019) are created for a similar purpose. The task is to generate highlight differences between birds. Please take a look at their [website](https://mbforbes.github.io/neural-naturalist/#on-the-shoulders-of-Giants) and [Github]. 
+2. The dataset [CLEVR-Change](https://arxiv.org/pdf/1901.02527.pdf) extends CLEVR with view-change captions. The [dataset](https://github.com/Seth-Park/viewpoint-invariant-change-captioning) was not publicly available yet. 
 
 ## Data Pre-processing
 
@@ -73,7 +76,7 @@ This code also provides the full utilization to train the model with reinforceme
 By setting this, the model would try to use the main metric (set by `--metric`) as reward and directly optimize it.
 We also implement the `self-critical methods` shown in [Self-critical Sequence Training for Image Captioning](https://arxiv.org/abs/1612.00563), which could be activated by setting `--baseline self` in the running script.
 
-The RL training could dramstically boost the metric that it optimized but show a lower performance in human evaluation. We thus discard RL training in the paper (as discussed in Sec.5 Related Work) but the code is definitely free to use!
+The RL training could dramstically boost the optimized metric but show lower performance in human evaluation. We thus omitted RL training results in our paper (as discussed in Sec.5 Related Work) but the code is definitely free to use!
 
 Enjoy it~
 
