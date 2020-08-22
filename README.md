@@ -38,7 +38,7 @@ Datum = {
 ```
 
 **More Related Datasets** 
-1. The dataset [NEURAL NATURALIST](https://arxiv.org/abs/1909.04101) (published in EMNLP 2019) are created for a similar purpose. The task is to generate highlight differences between birds. Please take a look at their [website](https://mbforbes.github.io/neural-naturalist/#on-the-shoulders-of-Giants) and [Github]. 
+1. The dataset [NEURAL NATURALIST](https://arxiv.org/abs/1909.04101) (published in EMNLP 2019) are created for a similar purpose. The task is to generate highlight differences between birds. Please take a look at their [website](https://mbforbes.github.io/neural-naturalist/#on-the-shoulders-of-Giants) and [Github](https://github.com/google-research-datasets/birds-to-words). 
 2. The dataset [CLEVR-Change](https://arxiv.org/pdf/1901.02527.pdf) extends CLEVR with view-change captions. The [dataset](https://github.com/Seth-Park/viewpoint-invariant-change-captioning) was not publicly available yet. 
 
 ## Data Pre-processing
