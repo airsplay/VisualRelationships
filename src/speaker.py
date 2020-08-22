@@ -181,13 +181,14 @@ class Speaker:
         else:
             assert False
 
-        # Calculate loss
+        # Calculate RL loss
         entropy = (- entropies * mask).sum() / tokens
         rl_loss = ((batch_reward.unsqueeze(1) - baseline.detach()) * (- log_probs) * mask).sum() / tokens
 
         # ML_training
         ml_loss, word_accu = self.teacher_forcing(src, trg, inst, leng, train=True)
-
+        
+        # ML + RL + Entropy Loss
         loss += ml_w * ml_loss + rl_w * rl_loss + e_w * entropy
         return loss, word_accu
 
@@ -264,7 +265,7 @@ class Speaker:
             logits, h_t, c_t = self.decoder(word, h_t, c_t, ctx, None)      # Decode, logits: (b, 1, vocab_size)
 
             # Select the word
-            logits = logits.squeeze()                                       # logits: (b, vocab_size)
+            logits = logits.squeeze(1)                                      # logits: (b, vocab_size)
             # if not sampling:
             logits[:, self.tok.unk_id] = -float("inf")                      # No <UNK> in infer
             if sampling:
