@@ -15,7 +15,7 @@ sents: A list of image editing requests. One for training and three for valid / 
 uid: Universal id for each instruction. It is useful when multiple datasets are involved.
 ```
 
-Image pairs are now available on google drive. [link to download](https://drive.google.com/drive/folders/1p_hkPwRUiLl1RHV3DkzQk3ti-GzHzT7O?usp=sharing).
+Image pairs are now available on Google Drive ([download link](https://drive.google.com/drive/folders/1p_hkPwRUiLl1RHV3DkzQk3ti-GzHzT7O?usp=sharing), [mirror](https://archive.org/details/image-editing-dataset)).
 
 
 ## Existing Public Datasets
